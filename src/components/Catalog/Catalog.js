@@ -23,7 +23,7 @@ class Catalog extends React.Component {
               <div className={s.filter_desc}></div>
               <div></div>
             </div>
-          /div>
+          </div>
         </div>
     );
   }
