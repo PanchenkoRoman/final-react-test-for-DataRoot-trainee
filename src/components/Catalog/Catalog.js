@@ -8,25 +8,25 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Register.css';
+import s from './Catalog.css';
 
-class Register extends React.Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-  };
 
+
+class Catalog extends React.Component {
   render() {
     return (
-      <div className={s.root}>
         <div className={s.container}>
-          <h1>{this.props.title}</h1>
-          <p>...</p>
+          <h1>Каталог продукції</h1>
+          <div className={s.filter_wrapper}>
+            <div className={s.filter_first}>
+              <div className={s.filter_desc}></div>
+              <div></div>
+            </div>
+          </div>
         </div>
-      </div>
     );
   }
 }
 
-export default withStyles(s)(Register);
+export default withStyles(s)(Catalog);

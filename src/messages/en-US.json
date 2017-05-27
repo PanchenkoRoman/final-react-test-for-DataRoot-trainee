@@ -11,16 +11,7 @@
   {
     "id": "header.banner.title",
     "description": "Title in page header",
-    "defaultMessage": "React",
-    "message": "",
-    "files": [
-      "src/components/Header/Header.js"
-    ]
-  },
-  {
-    "id": "header.brand",
-    "description": "Brand name displayed in header",
-    "defaultMessage": "Your Company Brand",
+    "defaultMessage": "Майстерня",
     "message": "",
     "files": [
       "src/components/Header/Header.js"
@@ -28,44 +19,26 @@
   },
   {
     "id": "navigation.about",
-    "description": "About link in header",
-    "defaultMessage": "About",
+    "description": "About link in header and futer",
+    "defaultMessage": "Про нас",
     "message": "",
     "files": [
       "src/components/Navigation/Navigation.js"
     ]
   },
   {
-    "id": "navigation.contact",
-    "description": "Contact link in header",
-    "defaultMessage": "Contact",
+    "id": "navigation.production",
+    "description": "production link in header and futer",
+    "defaultMessage": "Каталог продукції",
     "message": "",
     "files": [
       "src/components/Navigation/Navigation.js"
     ]
   },
   {
-    "id": "navigation.login",
-    "description": "Log in link in header",
-    "defaultMessage": "Log in",
-    "message": "",
-    "files": [
-      "src/components/Navigation/Navigation.js"
-    ]
-  },
-  {
-    "id": "navigation.separator.or",
-    "description": "Last separator in list, lowercase \"or\"",
-    "defaultMessage": "or",
-    "message": "",
-    "files": [
-      "src/components/Navigation/Navigation.js"
-    ]
-  },
-  {
-    "id": "navigation.signup",
-    "description": "Sign up link in header",
-    "defaultMessage": "Sign up",
+    "id": "navigation.works",
+    "description": "Works link in header and futer",
+    "defaultMessage": "Наші роботи",
     "message": "",
     "files": [
       "src/components/Navigation/Navigation.js"

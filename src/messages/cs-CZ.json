@@ -10,7 +10,7 @@
   },
   {
     "id": "header.banner.title",
-    "defaultMessage": "React",
+    "defaultMessage": "Майстерня",
     "message": "React",
     "description": "Title in page header",
     "files": [
@@ -21,16 +21,13 @@
     "id": "header.brand",
     "defaultMessage": "Your Company Brand",
     "message": "Vaše firma",
-    "description": "Brand name displayed in header",
-    "files": [
-      "src/components/Header/Header.js"
-    ]
+    "description": "Brand name displayed in header"
   },
   {
     "id": "navigation.about",
-    "defaultMessage": "About",
+    "defaultMessage": "Про нас",
     "message": "O nás",
-    "description": "About link in header",
+    "description": "About link in header and futer",
     "files": [
       "src/components/Navigation/Navigation.js"
     ]
@@ -39,34 +36,40 @@
     "id": "navigation.contact",
     "defaultMessage": "Contact",
     "message": "Kontakt",
-    "description": "Contact link in header",
-    "files": [
-      "src/components/Navigation/Navigation.js"
-    ]
+    "description": "Contact link in header"
   },
   {
     "id": "navigation.login",
     "defaultMessage": "Log in",
     "message": "Přihlásit",
-    "description": "Log in link in header",
-    "files": [
-      "src/components/Navigation/Navigation.js"
-    ]
+    "description": "Log in link in header"
   },
   {
     "id": "navigation.signup",
     "defaultMessage": "Sign up",
     "message": "Registrace",
-    "description": "Sign up link in header",
-    "files": [
-      "src/components/Navigation/Navigation.js"
-    ]
+    "description": "Sign up link in header"
   },
   {
     "id": "navigation.separator.or",
     "defaultMessage": "or",
     "message": "nebo",
-    "description": "Last separator in list, lowercase \"or\"",
+    "description": "Last separator in list, lowercase \"or\""
+  },
+  {
+    "id": "navigation.production",
+    "description": "production link in header and futer",
+    "defaultMessage": "Каталог продукції",
+    "message": "",
+    "files": [
+      "src/components/Navigation/Navigation.js"
+    ]
+  },
+  {
+    "id": "navigation.works",
+    "description": "Works link in header and futer",
+    "defaultMessage": "Наші роботи",
+    "message": "",
     "files": [
       "src/components/Navigation/Navigation.js"
     ]

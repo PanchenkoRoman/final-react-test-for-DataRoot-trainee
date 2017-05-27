@@ -11,6 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import history from '../../history';
 
+
 function isLeftClickEvent(event) {
   return event.button === 0;
 }
@@ -54,3 +55,5 @@ class Link extends React.Component {
 }
 
 export default Link;
+
+
