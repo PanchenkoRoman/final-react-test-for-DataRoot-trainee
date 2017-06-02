@@ -34,8 +34,15 @@ body {
   background: #FFFFFF;
 }
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
 text-decoration: none ;
+  color: #3C3C43;
 }
 h1{
 font-size: 54px;
@@ -64,4 +71,9 @@ font-weight: bold;
   text-align: center;
   border-radius: 3px;
   cursor: pointer;
+}
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
 }

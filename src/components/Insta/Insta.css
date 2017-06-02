@@ -1,0 +1,54 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+.center{
+  text-align: center;
+}
+.insta{
+  padding: 150px 0 0 0;
+}
+.container{
+  margin: 0 12.5%;
+}
+
+.title{
+  padding-bottom: 30px;
+}
+
+.cards{
+  display: inline-block;
+  vertical-align: top;
+  margin: 50px 20px 0 0;
+}
+
+.cards:nth-child(4){
+  margin: 50px 0 0 0;
+}
+.cards:nth-child(7){
+  margin: 50px 0 0 0;
+}
+
+.go_to_button{
+  display: inline-block;
+  width: 216px;
+  height: 57px;
+  color: #3C3C43;
+  border: solid 2px #3C3C43;
+  line-height: 57px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.card_desc{
+  text-align: center;
+  padding-top: 20px;
+}

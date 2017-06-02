@@ -1,0 +1,6 @@
+{
+  "name": "Insta",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./Insta.js"
+}

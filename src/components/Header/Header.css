@@ -84,3 +84,8 @@ h2{
   justify-content: space-between;
   align-items: center;
 }
+.clearfix::after {
+  content:"";
+  display:block;
+  clear:both;
+}

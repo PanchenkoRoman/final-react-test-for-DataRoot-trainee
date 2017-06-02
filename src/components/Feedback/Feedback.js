@@ -29,7 +29,6 @@ class Feedback extends React.Component {
                 <input type="tel" placeholder="Тлелефон"/>
                 <input type="e-mail" placeholder="E-mail"/>
                 <textarea name="" placeholder="Ваша ідея або питання">
-
                 </textarea>
                 <submit className={s.submit_form}>Зв’язатись</submit>
               </form>

@@ -9,6 +9,7 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import Tabss from '../Tab';
 import s from './Catalog.css';
 
 
@@ -20,10 +21,17 @@ class Catalog extends React.Component {
           <h1>Каталог продукції</h1>
           <div className={s.filter_wrapper}>
             <div className={s.filter_first}>
-              <div className={s.filter_desc}></div>
-              <div></div>
+              <div className={s.filter_desc}>
+                Внутрішнє та зовнішнє оздоблення
+              </div>
+              <div className={s.filter}>
+                <hr/>
+                <div className={s.filter_origin}>
+                  <Tabss />
+                </div>
+              </div>
             </div>
-          </div>
+          < /div>
         </div>
     );
   }

@@ -1,0 +1,130 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+.firstImg{
+  display: inline-block;
+  vertical-align: top;
+  max-width: 280px;
+  max-height: 420px;
+  margin-right: 17px;
+}
+
+.smallContainer{
+  display: inline-block;
+  vertical-align: top;
+  max-width: 580px;
+  max-height: 420px;
+}
+
+.small{
+  display: inline-block;
+  max-height: 200px;
+  width: 280px;
+  margin: 0 17px 0 0;
+}
+
+.smallImg{
+  display: inline-block;
+  max-height: 200px;
+  width: 280px;
+}
+
+.small:nth-child(even){
+  margin-right: 0;
+}
+
+.small:nth-child(4){
+  margin-top: 17px;
+}
+
+.small:nth-child(5){
+  margin-top: 17px;
+}
+
+.filter_desc{
+  width: 28%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 24px;
+  font-family: 'Roboto';
+}
+
+.filter{
+  width: 72%;
+  display: inline-block;
+  vert-align: top;
+}
+hr{
+  background: #747880;
+  height: 2px;
+  border: none;
+  margin-top: 12px;
+}
+
+.filter_first{
+  width: 136%;
+  position: relative;
+  left: -341px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.vb{
+  width: 208px;
+}
+
+.second{
+  width: 284px;
+}
+
+.last{
+  width: 360px;
+}
+
+.imgWrap{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.imgWrap:last-child{
+  margin-right: 0;
+}
+
+.list{
+  list-style-type: none;
+}
+.imgWrap img{
+  max-height: 385px;
+}
+
+.disabled{
+  color: red;
+}
+
+.none{
+  list-style-type: none;
+  margin: 30px 0;
+}
+
+.inline{
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.inline:first-child{
+  margin-right: 35px;
+  cursor: auto;
+}
+
+.inline:last-child{
+  margin-right: 0;
+}

@@ -36,15 +36,23 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className={s.nav} role="navigation">
-        <Link className={s.link} to="/production">
-          <FormattedMessage {...messages.production} />
-        </Link><br/>
-        <Link className={s.link} to="/about">
-          <FormattedMessage {...messages.about} />
-        </Link><br/>
-        <Link className={s.link} to="/error">
-          <FormattedMessage {...messages.works} />
-        </Link>
+        <ul>
+          <li>
+            <Link className={s.link} to="/production">
+              <FormattedMessage {...messages.production} />
+            </Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/about">
+              <FormattedMessage {...messages.about} />
+            </Link>
+          </li>
+          <li>
+            <Link className={s.link} to="/error">
+              <FormattedMessage {...messages.works} />
+            </Link>
+          </li>
+        </ul>
       </div>
     );
   }

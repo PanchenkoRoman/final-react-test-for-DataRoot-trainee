@@ -10,6 +10,9 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import Header from '../../components/Header';
+import MainCatalog from '../../components/MainCatalog';
+import About from '../../components/About';
+import Insta from '../../components/Insta';
 
 export default {
 
@@ -18,7 +21,7 @@ export default {
   action() {
     return {
       title: 'React Starter Kit',
-      component: <Layout><Header/></Layout>,
+      component:<Layout><Header/><MainCatalog /><About /><Insta /></Layout>,
     };
   },
 

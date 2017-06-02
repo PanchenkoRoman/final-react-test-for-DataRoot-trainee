@@ -8,32 +8,34 @@
  */
 
 @import '../variables.css';
-hr{
-  background: #747880;
-  height: 2px;
-  border: none;
-  margin-top: 12px;
+.main_h{
+  padding-bottom: 61px;
+}
+
+.about{
+  padding-top: 150px;
+}
+
+.link{
+  margin-right: 60px;
 }
 
 .container{
-  margin-left: 4%;
-  margin-right: 4%;
+  margin: 0 5.4%;
 }
 
-.filter_first{
-  padding-top: 90px;
-}
-
-.filter_desc{
-  width: 28%;
+.about_block{
   display: inline-block;
-  vertical-align: top;
-  font-size: 24px;
-  font-family: 'Roboto';
+  vertical-align: middle;
 }
 
-.filter{
-  width: 72%;
+.about_block_text{
+  width: 55%;
+  padding-left: 4%;
+}
+
+.text{
   display: inline-block;
-  vertical-align: top;
+  line-height: 25px;
+  padding-bottom: 30px;
 }
