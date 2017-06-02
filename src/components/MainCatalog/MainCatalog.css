@@ -46,8 +46,42 @@
   cursor: pointer;
   position: absolute;
   bottom: 0;
+  transition: all 0.3s;
+  transition-timing-function: linear;
+}
+
+.go_to_button:hover{
+  color: white;
+  background: #3C3C43;
 }
 
 .link{
-  line-height: 57px;
+  display: inline-block;
+  padding: 22px 0 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+.link:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #3C3C43;
+  transition: 0.4s;
+}
+
+.link:hover:after {
+  width: 100%;
+}
+
+.block img{
+  transition: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.block img:hover{
+  transform: scale(1.1);
 }

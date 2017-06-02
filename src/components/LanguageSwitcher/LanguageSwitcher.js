@@ -8,8 +8,8 @@ import { setLocale } from '../../actions/intl';
 function LanguageSwitcher({ currentLocale, availableLocales, setLocale }) {
   const isSelected = locale => locale === currentLocale;
   const localeDict = {
-    'en-US': 'English',
-    'cs-CZ': 'Česky',
+    'en-US': 'укр /',
+    'cs-CZ': ' рус',
   };
   const localeName = locale => localeDict[locale] || locale;
   return (

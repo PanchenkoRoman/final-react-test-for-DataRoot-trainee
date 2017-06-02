@@ -22,6 +22,7 @@
   padding-bottom: 30px;
 }
 
+
 .cards{
   display: inline-block;
   vertical-align: top;
@@ -46,9 +47,26 @@
   border-radius: 3px;
   cursor: pointer;
   margin-top: 50px;
+  transition: all 0.3s;
+  transition-timing-function: linear;
+}
+
+.go_to_button:hover{
+  color: white;
+  background: #3C3C43;
 }
 
 .card_desc{
   text-align: center;
   padding-top: 20px;
+}
+
+.cards img{
+  transition: 0.3s;
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+
+.cards img:hover{
+  transform: scale(1.1);
 }

@@ -36,7 +36,7 @@ class About extends React.Component {
                 <Link className={s.link} to="/about">
                   Детальніше
                 </Link>
-                <Link to="/production">
+                <Link className={s.link} to="/production">
                   Переглянути роботи
                 </Link>
               </div>

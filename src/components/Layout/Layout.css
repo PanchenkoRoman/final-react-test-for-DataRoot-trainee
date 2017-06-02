@@ -63,7 +63,6 @@ font-weight: bold;
 
 .go_to_button{
   display: inline-block;
-  width: 265px;
   height: 57px;
   color: #3C3C43;
   border: solid 2px #3C3C43;
@@ -71,6 +70,13 @@ font-weight: bold;
   text-align: center;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.3s;
+  transition-timing-function: linear;
+}
+
+.go_to_button:hover{
+  color: white;
+  background: #3C3C43;
 }
 .clearfix::after {
   content:"";
