@@ -79,3 +79,173 @@ h2{
 .lan{
   display: inline-block !important;
 }
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+.bm-menu-wrap{
+  left: 0!important;
+}
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: none;
+}
+
+button{
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute !important;
+  z-index: 100000;
+  cursor: pointer;
+}
+
+.none{
+  display: none;
+}
+
+.hr{
+  height: 5px;
+  border: none;
+  background: rgba(255,255,255,1);
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+}
+
+.menu_logo, .logo_desc{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu_logo{
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 1249px) and (min-width: 993px){
+  .heder_info{
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+  .heder_info{
+    width: 100%;
+  }
+  .header_component{
+    margin-right: 11%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+
+  .menu_title{
+    margin-right: 0;
+    width: 100%;
+    float: none;
+  }
+
+  .menu_title_bottom{
+    justify-content: center;
+  }
+  .none{
+    display: block;
+  }
+
+  .noneBl{
+    display: none;
+  }
+
+  .menu_nav{
+    float: none;
+    width: 100%;
+    padding: 90px 8.5%;
+    border:none;
+    background: white;
+  }
+  .logo_desc{
+    width: 70%;
+    padding-left: 20px ;
+  }
+  .mobile{
+    padding: 27px 30px;
+  }
+  .butBot{
+    text-align: center;
+    padding: 12px 0;
+    background: #F9F0DD;
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 360px){
+  h1{
+    font-size: 36px;
+  }
+  .noneBl{
+    display: none;
+  }
+  .mobile{
+    padding: 27px 30px;
+  }
+  .menu_title{
+    margin-right: 0;
+    width: 100%;
+    float: none;
+  }
+
+  .none{
+    display: block;
+  }
+
+  .noneBl{
+    display: none;
+  }
+
+
+  .menu_nav{
+    float: none;
+    border:none;
+    width: 100%;
+    padding: 90px 8.5%;
+    background: white;
+  }
+  .logo_desc{
+    width: 75%;
+    padding-left: 20px ;
+  }
+  .butBot{
+    text-align: center;
+    padding: 12px 0;
+    background: #F9F0DD;
+  }
+}
+
+

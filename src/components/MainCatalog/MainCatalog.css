@@ -85,3 +85,61 @@
 .block img:hover{
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1360px) and (min-width: 1201px){
+  .container{
+    margin: 0 12%;
+  }
+  .second_section{
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px){
+  .container{
+    margin: 0 4%;
+  }
+  .second_section{
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+  .container{
+    margin: 0 2.5%;
+    width: 95%;
+    overflow-x: scroll;
+  }
+  .second_section{
+    padding-top: 80px;
+    width: 1800px;
+
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+  .container{
+    margin: 0 2.5%;
+    width: 95%;
+    overflow-x: scroll;
+  }
+  .second_section{
+    padding-top: 80px;
+    width: 1800px;
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 360px){
+  .container{
+    margin: 0 2.5%;
+    width: 95%;
+    overflow-x: scroll;
+  }
+  .second_section{
+    padding-top: 80px;
+    width: 1700px;
+  }
+  .block{
+    width: 240px;
+  }
+}

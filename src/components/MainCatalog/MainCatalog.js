@@ -18,6 +18,14 @@ import Second from './2.jpg';
 import Third from './3.jpg';
 import Fourth from './4.jpg';
 
+/* var BackgroundStyle = {
+  width: '415px',
+  backgroundImage: `url(${Third})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'contain'
+} */
+
+
 class MainCatalog extends React.Component {
   render() {
     return (

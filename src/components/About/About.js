@@ -13,13 +13,22 @@ import s from './About.css';
 import Link from '../Link';
 import Img from './img.jpg';
 
+var BackgroundStyle = {
+  width: '36%',
+  height: '533px',
+  backgroundImage: `url(${Img})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  display: 'inline-block',
+  verticalAlign: 'middle'
+}
+
 class About extends React.Component {
   render() {
     return (
           <div className={s.container}>
             <div className={s.about}>
-              <div className={s.about_block}>
-                <img src={Img} alt=""/>
+              <div style={BackgroundStyle} className={s.backImg}>
               </div>
               <div className={[s.about_block, s.about_block_text].join(' ')}>
                 <h1 className={s.main_h}>Про нас</h1>

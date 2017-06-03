@@ -19,6 +19,7 @@ import Hfto from './hf2.png';
 import Big from './Group.png';
 
 
+
 const Catalog = [
   {
     link: '/',
@@ -45,17 +46,14 @@ const Catalog = [
 const catalogSecond = [
   {
     link: '/',
-    img: Hf,
     alt: 'first'
   },
   {
     link: '/',
-    img: Hfto,
     alt: 'second'
   },
   {
     link: '/',
-    img: Hard,
     alt: 'third'
   }
 ];
@@ -117,10 +115,10 @@ class Tabss extends React.Component {
             {
               catalogSecond.map(elem =>
                   <div className={s.imgWrap}>
-                  <img className={
+                  <div className={
                     elem.alt == 'first' ? s.vb :
                     elem.alt == 'second' ? s.second : s.third
-                  } src={elem.img} altText={elem.alt}/>
+                  }></div>
                   </div>
                 )
              }

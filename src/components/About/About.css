@@ -21,7 +21,7 @@
 }
 
 .container{
-  margin: 0 5.4%;
+  padding: 0 8%;
 }
 
 .about_block{
@@ -30,7 +30,7 @@
 }
 
 .about_block_text{
-  width: 55%;
+  width: 60%;
   padding-left: 4%;
 }
 
@@ -61,3 +61,73 @@
 .link:hover:after {
   width: 100%;
 }
+
+@media screen and (max-width: 1360px) and (min-width: 1201px){
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px){
+  .container{
+    padding: 0 4%;
+  }
+  .about_block_text{
+    width: 62%;
+    padding-left: 4%;
+  }
+  .about{
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+  .container{
+    padding: 0 4%;
+  }
+  .about_block_text{
+    width: 62%;
+    padding-left: 4%;
+  }
+  .about{
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+  .about{
+    padding-top: 40px;
+  }
+  .backImg{
+    width: 100%!important;
+  }
+  .container{
+    padding: 0 2.5%;
+  }
+  .about_block_text{
+    width: 100%;
+    padding-left: 0;
+  }
+  .main_h{
+    padding: 35px 0;
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 360px){
+  .about{
+    padding-top: 40px;
+  }
+  .backImg{
+    width: 100%!important;
+    height: 240px!important;
+  }
+  .container{
+    padding: 0 2.5%;
+  }
+  .about_block_text{
+    width: 100%;
+    padding-left: 0;
+  }
+  .main_h{
+    padding: 35px 0;
+  }
+}
+

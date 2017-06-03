@@ -53,7 +53,7 @@ class Insta extends React.Component {
             <div className={s.insta}>
               <div className={s.center}>
                 <h1 className={s.title}>Краще один раз подивитись</h1>
-                <span>Фото проектів з нашого instagram.</span>
+                <span>Фото проектів з нашого <a href=""><strong>instagram</strong></a>.</span>
               </div>
               {
                 Catalog.map(elem =>

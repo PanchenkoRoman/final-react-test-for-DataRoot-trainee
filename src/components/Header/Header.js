@@ -22,7 +22,7 @@ import close from './close.svg';
 
 var styles = {
   bmBurgerButton: {
-    position: 'fixed',
+    position: 'absolute',
     width: '36px',
     height: '30px',
     right: '30px',
@@ -53,7 +53,10 @@ class MenuResponsive extends React.Component {
   render () {
     return (
       <div>
-        майстернч
+        <div className={s.mobile}>
+          <h2>Майстерня</h2>
+        </div>
+        <hr className={s.none}/>
         <Menu right styles={ styles }
               customCrossIcon={ <img src={close} /> }
               customBurgerIcon={ <img src={menu} /> }
@@ -70,6 +73,9 @@ class MenuResponsive extends React.Component {
               </div>
               <Navigation></Navigation>
             </div>
+          </div>
+          <div className={s.butBot}>
+            <a href='' className={s.go_to_button}>Зв’язатись з нами</a>
           </div>
         </Menu>
       </div>
