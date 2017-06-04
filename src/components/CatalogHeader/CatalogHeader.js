@@ -15,6 +15,7 @@ import Navigation from '../Navigation';
 import { slide as Menu } from 'react-burger-menu';
 import logodf from './logodf.png';
 import menu from './menu.png';
+import Link from '../Link';
 import close from './close.svg';
 
 var styles = {
@@ -88,7 +89,7 @@ class CatalogHeader extends React.Component {
           <div className={[s.clearfix, s.header, s.noneBl].join(' ')}>
             <div className={s.container}>
             <div className={s.heder_title}>
-              <h2>Майстерня</h2>
+              <Link className={s.brand} to="/"><h2>Майстерня</h2></Link>
             </div>
             <div className={s.heder_info}>
               <div className={s.header_component}>

@@ -7,18 +7,33 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react'
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Tab.css';
 import { Tab, Tabs, TabList, TabPanel, ReactTabs } from 'react-tabs';
 import Img from './img.jpg';
-import First from './first.png';
-import Hard from './hard.png';
-import Hf from './hf.png';
-import Hfto from './hf2.png';
-import Big from './Group.png';
+import { Push } from 'react-history/Actions'
 
+const Link = React.createClass({
+  propTypes: {
+    to: PropTypes.string.isRequired
+  },
 
+  getInitialState() {
+    return { wasClicked: false }
+  },
+
+  render() {
+    const { to, ...props } = this.props
+
+    if (this.state.wasClicked)
+      return <Push path={to}/>
+
+    return (
+      <span {...props} onClick={() => this.setState({ wasClicked: true })}></span>
+    )
+  }
+})
 
 const Catalog = [
   {
@@ -84,6 +99,7 @@ class Tabss extends React.Component {
     return (
         <Tabs>
           <TabList className={s.none} >
+            <Link/>
             <li className={s.inline}> Вид каменю: </li>
             {
               catalogNames.map(elem =>
@@ -92,17 +108,18 @@ class Tabss extends React.Component {
             }
           </TabList>
           <TabPanel>
-            <div className={s.firstImg}>
-              <img src={First} altText='img'/>
-            </div>
-            <div className={s.smallContainer}>
-              {
-                Catalog.map(elem =>
-                      <div className={s.small}>
-                        <img className={s.smallImg} src={elem.img} altText={elem.alt}/>
-                      </div>
-                )
-              }
+            <div className={s.flex}>
+              <div className={s.firstImg}>
+              </div>
+              <div className={s.smallContainer}>
+                {
+                  Catalog.map(elem =>
+                        <div className={s.small}>
+                          <img className={s.smallImg} src={elem.img} altText={elem.alt}/>
+                        </div>
+                  )
+                }
+              </div>
             </div>
             <div className={s.filter_first}>
               <div className={s.filter_desc}>
@@ -112,16 +129,18 @@ class Tabss extends React.Component {
                 <hr/>
               </div>
             </div>
-            {
-              catalogSecond.map(elem =>
-                  <div className={s.imgWrap}>
-                  <div className={
-                    elem.alt == 'first' ? s.vb :
-                    elem.alt == 'second' ? s.second : s.third
-                  }></div>
-                  </div>
-                )
-             }
+            <div className={s.secondSection}>
+              {
+                catalogSecond.map(elem =>
+                    <div className={s.imgWrap}>
+                    <div className={
+                      elem.alt == 'first' ? s.vb :
+                      elem.alt == 'second' ? s.second : s.third
+                    }></div>
+                    </div>
+                  )
+               }
+            </div>
             <div className={s.filter_first}>
               <div className={s.filter_desc}>
                 Садово-паркове мистецтво
@@ -130,7 +149,8 @@ class Tabss extends React.Component {
                 <hr/>
               </div>
             </div>
-            <img src={Big}/>
+            <div className={s.big}>
+            </div>
           </TabPanel>
         </Tabs>
     );

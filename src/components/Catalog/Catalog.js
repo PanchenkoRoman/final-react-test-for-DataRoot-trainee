@@ -25,7 +25,7 @@ class Catalog extends React.Component {
                 Внутрішнє та зовнішнє оздоблення
               </div>
               <div className={s.filter}>
-                <hr/>
+                <hr className={s.none}/>
                 <div className={s.filter_origin}>
                   <Tabss />
                 </div>

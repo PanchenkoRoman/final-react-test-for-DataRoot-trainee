@@ -52,17 +52,85 @@ hr{
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px){
-
+  .container{
+    margin: 0 2%;
+    padding-top: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .filter_desc{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .filter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px){
-
+  .container{
+    margin: 0 2%;
+    padding-top: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .filter_desc{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .filter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 480px){
-
+  .container{
+    margin: 0 2%;
+    padding-top: 70px;
+  }
+  .none {
+    display: none;
+  }
+  .filter_desc{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .filter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 479px) and (min-width: 360px){
+  .container{
+    margin: 0 2%;
+    padding-top: 30px;
+  }
+  .none {
+    display: none;
+  }
+  .filter_desc{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .filter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .filter_first{
+   padding-top: 30px;
+  }
 
 }

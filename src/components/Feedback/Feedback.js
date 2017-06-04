@@ -19,7 +19,7 @@ import Navigation from '../Navigation';
 class Feedback extends React.Component {
   render() {
     return (
-        <div className={s.container}>
+        <div id="#to" className={s.container}>
           <div className={s.form_container}>
             <div className={s.center}>
               <h1>Виготовимо наступний шедевр разом</h1>
