@@ -124,6 +124,9 @@ hr{
 .disabled{
   color: red;
 }
+.insted{
+  color: inherit;
+}
 
 .none{
   list-style-type: none;

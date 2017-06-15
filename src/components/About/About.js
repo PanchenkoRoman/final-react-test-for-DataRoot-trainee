@@ -13,7 +13,7 @@ import s from './About.css';
 import Link from '../Link';
 import Img from './img.jpg';
 
-var BackgroundStyle = {
+const BackgroundStyle = {
   width: '36%',
   height: '533px',
   backgroundImage: `url(${Img})`,
@@ -22,6 +22,19 @@ var BackgroundStyle = {
   display: 'inline-block',
   verticalAlign: 'middle'
 }
+
+const Paragraph = [
+  {
+    text: "Майстерня - це місце, де ваша ідея реалізовується з натурального каменю Вже більше 5 років ми створюємо унікальні дизайн-проекти для приватних і громадських інтер'єрів."
+  },
+  {
+    text: "Ми пропонуємо різні варіанти співпраці, серед яких створення дизайн-проектів будь-якої складності, їх авторський супровід та повна реалізація."
+  },
+  {
+    text: "Найважливіше для нас - ваше естетичне задоволення, тож ми гарантуємо якість нашої роботи та дотримання термінів виконання."
+  },
+]
+
 
 class About extends React.Component {
   render() {
@@ -32,16 +45,11 @@ class About extends React.Component {
               </div>
               <div className={[s.about_block, s.about_block_text].join(' ')}>
                 <h1 className={s.main_h}>Про нас</h1>
-                <span className={s.text}>
-                  Майстерня – це місце, де ваша ідея реалізовується з натурального каменю.
-                  Вже більше 5 років ми створюємо унікальні дизайн-проекти для приватних і громадських інтер'єрів.
-                </span><br/>
-                <span className={s.text}>
-                  Ми пропонуємо різні варіанти співпраці, серед яких створення дизайн-проектів будь-якої складності, їх авторський супровід та повна реалізація, художнє оформлення інтер'єрів, а також їх доставку та послуги монтування.
-                </span><br/>
-                <span className={s.text}>
-                  Найважливіше для нас – ваше естетичне задоволення, тож ми гарантуємо якість нашої роботи та дотримання термінів виконання.
-                </span ><br/><br/>
+                {
+                  Paragraph.map((elem, index) =>
+                      <span className={s.text}>{elem.text}</span>
+                  )
+                }
                 <Link className={s.link} to="/about">
                   Детальніше
                 </Link>

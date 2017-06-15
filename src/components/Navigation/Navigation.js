@@ -48,7 +48,7 @@ class Navigation extends React.Component {
             </Link>
           </li>
           <li>
-            <Link className={s.link} to="/error">
+            <Link className={s.link} to="/production">
               <FormattedMessage {...messages.works} />
             </Link>
           </li>

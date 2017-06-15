@@ -56,8 +56,8 @@ class Insta extends React.Component {
                 <span>Фото проектів з нашого <a href=""><strong>instagram</strong></a>.</span>
               </div>
               {
-                Catalog.map(elem =>
-                  <div className={s.cards}>
+                Catalog.map((elem, index) =>
+                  <div key={index} className={s.cards}>
                     <img src={elem.img} alt=""/>
                     <div className={s.card_desc}>#onyx #m-selection</div>
                   </div>

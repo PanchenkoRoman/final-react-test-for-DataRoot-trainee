@@ -6,15 +6,16 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Tab.css';
+import Link from '../Link';
 import { Tab, Tabs, TabList, TabPanel, ReactTabs } from 'react-tabs';
 import Img from './img.jpg';
-import { Push } from 'react-history/Actions'
+import { BrowserHistory } from 'react-history';
+import  { Push }  from 'react-history/Actions';
 
-const Link = React.createClass({
+/*const Link = React.createClass({
   propTypes: {
     to: PropTypes.string.isRequired
   },
@@ -27,13 +28,13 @@ const Link = React.createClass({
     const { to, ...props } = this.props
 
     if (this.state.wasClicked)
-      return <Push path={to}/>
+      return( <Push path="/home?the=query#the-hash"/> )
 
     return (
-      <span {...props} onClick={() => this.setState({ wasClicked: true })}></span>
+      <span {...props} onClick={() => this.setState({ wasClicked: true })}/>
     )
   }
-})
+})*/
 
 const Catalog = [
   {
@@ -75,22 +76,28 @@ const catalogSecond = [
 
 const catalogNames = [
   {
-    name: 'мармур'
+    name: 'мармур',
+    link: '/production?type=marble'
   },
   {
-    name: 'граніт'
+    name: 'граніт',
+    link: '/production?type=granit'
   },
   {
-    name: 'пісковик'
+    name: 'пісковик',
+    link: '/production?type=sandstone'
   },
   {
-    name: 'вапняк'
+    name: 'вапняк',
+    link: '/production?type=limestone'
   },
   {
-    name: 'квацит'
+    name: 'кварцит',
+    link: '/production?type=quartzite'
   },
   {
-    name: 'онікс'
+    name: 'онікс',
+    link: '/production?type=onyx'
   }
 ]
 
@@ -103,7 +110,7 @@ class Tabss extends React.Component {
             <li className={s.inline}> Вид каменю: </li>
             {
               catalogNames.map(elem =>
-                <Tab selectedClassName={s.disabled} className={s.inline}>{elem.name}</Tab>
+                <Tab selectedClassName={s.disabled} className={s.inline}><Link className={s.insted} to={elem.link}>{elem.name}</Link></Tab>
               )
             }
           </TabList>

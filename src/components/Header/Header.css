@@ -113,7 +113,8 @@ h2{
   line-height: 24px;
   padding-bottom: 15px;
   margin-top: 15px;
-  display: inline-block;
+  display: block;
+  text-align: left;
 }
 
 .contact_desc{

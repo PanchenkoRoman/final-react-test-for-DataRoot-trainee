@@ -68,8 +68,8 @@ class MenuResponsive extends React.Component {
               </div>
               <div className={s.logo_desc}>
                 <h2>Майстерня</h2><br/>
-                <span className={s.main_contact}>+38 066 445 59 00</span><br/>
-                <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span><br/>
+                <a href="tel:+380664455900" className={s.main_contact}>+38 066 445 59 00</a>
+                <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span>
               </div>
               <Navigation></Navigation>
             </div>
@@ -129,9 +129,9 @@ class Header extends React.Component {
                   <img src={logodf} alt="React" />
                 </div>
                 <div className={s.logo_desc}>
-                  <h2>Майстерня</h2><br/>
-                  <span className={s.main_contact}>+38 066 445 59 00</span><br/>
-                  <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span><br/>
+                  <h2>Майстерня</h2>
+                  <a href="tel:+380664455900" className={s.main_contact}>+38 066 445 59 00</a>
+                  <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span>
                 </div>
                 <Navigation></Navigation>
               </div>

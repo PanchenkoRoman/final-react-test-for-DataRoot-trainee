@@ -24,7 +24,32 @@ import Fourth from './4.jpg';
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'contain'
 } */
-
+const Catalog = [
+    {
+      link: '/',
+      img: First,
+      alt: 'img',
+      name: 'Портрети'
+    },
+    {
+      link: '/',
+      img: Second,
+      alt: 'img',
+      name: 'Скульптури'
+    },
+    {
+      link: '/',
+      img: Third,
+      alt: 'img',
+      name: 'Каміни'
+    },
+    {
+      link: '/',
+      img: Fourth,
+      alt: 'img',
+      name: 'Столешні'
+    }
+];
 
 class MainCatalog extends React.Component {
   render() {
@@ -54,30 +79,15 @@ class MainCatalog extends React.Component {
                   Каталог продукції
                 </Link>
             </div>
-            <div className={s.block}>
-              <img src={First} alt=""/>
-              <Link className={s.link} to="/production">
-                Портрети
-              </Link>
-            </div>
-            <div className={s.block}>
-              <img src={Second} alt=""/>
-              <Link className={s.link} to="/production">
-                Скульпрури
-              </Link>
-            </div>
-            <div className={s.block}>
-              <img src={Third} alt=""/>
-              <Link className={s.link} to="/production">
-                Каміни
-              </Link>
-            </div>
-            <div className={s.block}>
-              <img src={Fourth} alt=""/>
-              <Link className={s.link} to="/production">
-                Столешні
-              </Link>
-            </div>
+            {
+              Catalog.map((elem, index) =>
+                <div key={index} className={s.block}>
+                  <img src={elem.img} alt=""/>
+                  <Link className={s.link} to="/production">{elem.name}</Link>
+                </div>
+              )
+            }
+
           </div>
         </div>
     );

@@ -66,7 +66,7 @@ class MenuResponsive extends React.Component {
               </div>
               <div className={s.logo_desc}>
                 <h2>Майстерня</h2><br/>
-                <span className={s.main_contact}>+38 066 445 59 00</span><br/>
+                <a href="tel:+380664455900" className={s.main_contact}>+38 066 445 59 00</a>
                 <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span><br/>
               </div>
               <Navigation></Navigation>
@@ -93,8 +93,8 @@ class CatalogHeader extends React.Component {
             </div>
             <div className={s.heder_info}>
               <div className={s.header_component}>
-                <span className={s.main_contact}>+38 066 445 59 00</span><br/>
-                <span className={s.contact_desc}>Доставка по Україні</span><br/>
+                <a href="tel:+380664455900" className={s.main_contact}>+38 066 445 59 00</a>
+                <span className={s.contact_desc}>Доставка по Україні</span>
               </div>
               <div className={s.header_component}>
                 <a href='' className={s.go_to_button}>Зв’язатись з нами</a>

@@ -40,8 +40,8 @@ class Feedback extends React.Component {
             <iframe className={s.map} src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1982.868364176605!2d22.719296312654762!3d48.440952597368586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1496424843810" allowfullscreen></iframe>
             <div className={s.nav}>
               <h2>Контакти</h2><br/>
-              <span className={s.main_contact}>+38 066 445 59 00</span><br/>
-              <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span><br/>
+              <a href="tel:+380664455900" className={s.main_contact}>+38 066 445 59 00</a>
+              <span className={s.contact_desc}>м. Мукачево, вул. Переяславська, 1</span>
               <Navigation></Navigation>
             </div>
           </div>

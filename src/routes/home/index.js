@@ -14,11 +14,13 @@ import MainCatalog from '../../components/MainCatalog';
 import About from '../../components/About';
 import Insta from '../../components/Insta';
 
+
 export default {
 
   path: '/',
 
-  action() {
+  async action() {
+
     return {
       title: 'React Starter Kit',
       component:<Layout><Header/><MainCatalog /><About /><Insta /></Layout>,

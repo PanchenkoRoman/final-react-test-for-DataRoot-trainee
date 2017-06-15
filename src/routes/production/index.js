@@ -16,7 +16,7 @@ export default {
 
   path: '/Production',
 
-  async action() {
+  async action(context) {
     return {
       title: 'Production',
       chunk: 'Production',
