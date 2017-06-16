@@ -11,14 +11,14 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './About.css';
 import Link from '../Link';
-import Img from './img.jpg';
+//import Img from './img.jpg';
 
 const BackgroundStyle = {
   width: '36%',
   height: '533px',
-  backgroundImage: `url(${Img})`,
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
+  //backgroundImage: `url(${Img})`,
+  //backgroundRepeat: 'no-repeat',
+ // backgroundSize: 'cover',
   display: 'inline-block',
   verticalAlign: 'middle'
 }
@@ -36,18 +36,22 @@ const Paragraph = [
 ]
 
 
+
+
 class About extends React.Component {
+
   render() {
+    const { data } = this.props.aboutUs;
     return (
           <div className={s.container}>
             <div className={s.about}>
-              <div style={BackgroundStyle} className={s.backImg}>
+              <div style={{ backgroundImage: `url(${data.img})`, BackgroundStyle}} className={s.backImg}>
               </div>
               <div className={[s.about_block, s.about_block_text].join(' ')}>
-                <h1 className={s.main_h}>Про нас</h1>
+                <h1 className={s.main_h}>{data.title}</h1>
                 {
                   Paragraph.map((elem, index) =>
-                      <span className={s.text}>{elem.text}</span>
+                      <p className={s.text}>{elem.text}</p>
                   )
                 }
                 <Link className={s.link} to="/about">

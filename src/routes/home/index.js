@@ -9,21 +9,25 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Header from '../../components/Header';
-import MainCatalog from '../../components/MainCatalog';
-import About from '../../components/About';
-import Insta from '../../components/Insta';
+import Home from './Home';
+import * as load from '../../actions/Load'
 
 
 export default {
 
   path: '/',
 
-  async action() {
+  async action(context) {
+
+    await Promise.all([
+      context.store.dispatch(load.getData('about', 'GET_DATA_ABOUT_SUCCESS')),
+      context.store.dispatch(load.getData('projects', 'GET_DATA_PROJECTS_SUCCESS')),
+    ]);
+    console.log(context.store.getState().aboutUs);
 
     return {
       title: 'React Starter Kit',
-      component:<Layout><Header/><MainCatalog /><About /><Insta /></Layout>,
+      component:<Layout><Home /></Layout>,
     };
   },
 

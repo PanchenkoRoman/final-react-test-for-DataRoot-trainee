@@ -77,27 +77,27 @@ const catalogSecond = [
 const catalogNames = [
   {
     name: 'мармур',
-    link: '/production?type=marble'
+    link: '/catalog?type=marble'
   },
   {
     name: 'граніт',
-    link: '/production?type=granit'
+    link: '/catalog?type=granit'
   },
   {
     name: 'пісковик',
-    link: '/production?type=sandstone'
+    link: '/catalog?type=sandstone'
   },
   {
     name: 'вапняк',
-    link: '/production?type=limestone'
+    link: '/catalog?type=limestone'
   },
   {
     name: 'кварцит',
-    link: '/production?type=quartzite'
+    link: '/catalog?type=quartzite'
   },
   {
     name: 'онікс',
-    link: '/production?type=onyx'
+    link: '/catalog?type=onyx'
   }
 ]
 

@@ -38,7 +38,7 @@ class Navigation extends React.Component {
       <div className={s.nav} role="navigation">
         <ul>
           <li>
-            <Link className={s.link} to="/production">
+            <Link className={s.link} to="/catalog">
               <FormattedMessage {...messages.production} />
             </Link>
           </li>
@@ -48,7 +48,7 @@ class Navigation extends React.Component {
             </Link>
           </li>
           <li>
-            <Link className={s.link} to="/production">
+            <Link className={s.link} to="/catalog">
               <FormattedMessage {...messages.works} />
             </Link>
           </li>

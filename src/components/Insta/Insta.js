@@ -13,6 +13,11 @@ import s from './Insta.css';
 import Link from '../Link';
 import Img from './img.jpg';
 
+const Size = {
+  width: "320px",
+  height: "320px"
+}
+
 const Catalog = [
   {
     link: '/',
@@ -48,6 +53,7 @@ const Catalog = [
 
 class Insta extends React.Component {
   render() {
+    const { data } = this.props.projects;
     return (
           <div className={s.container}>
             <div className={s.insta}>
@@ -56,10 +62,10 @@ class Insta extends React.Component {
                 <span>Фото проектів з нашого <a href=""><strong>instagram</strong></a>.</span>
               </div>
               {
-                Catalog.map((elem, index) =>
+                data.slice(0, 6).map((elem, index) =>
                   <div key={index} className={s.cards}>
-                    <img src={elem.img} alt=""/>
-                    <div className={s.card_desc}>#onyx #m-selection</div>
+                    <img src={elem.img} style={Size} alt={elem.alt}/>
+                    <div className={s.card_desc}>{elem.tags.map((elem,index) => <span>#{elem}</span>)}</div>
                   </div>
                 )
               }

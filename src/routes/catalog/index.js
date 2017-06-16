@@ -9,18 +9,24 @@
 
 import React from 'react';
 import Layout from '../../components/Layout';
-import Catalog from '../../components/Catalog';
-import CatalogHeader from '../../components/CatalogHeader';
+import Catalogs from './Catalogs';
+import * as load from '../../actions/Load'
 
 export default {
 
-  path: '/Production',
+  path: '/catalog',
 
   async action(context) {
+
+    await Promise.all([
+      context.store.dispatch(load.getData('park', 'GET_DATA_PARK_')),
+    ]);
+    console.log(context.store.getState().park);
+
     return {
       title: 'Production',
-      chunk: 'Production',
-      component: <Layout><CatalogHeader /><Catalog /></Layout>,
+      chunk: 'Catalog',
+      component: <Layout><Catalogs /></Layout>,
     };
   },
 
